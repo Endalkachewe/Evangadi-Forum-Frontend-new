@@ -21,7 +21,7 @@ console.log(user.userid);
       return;
     }
     try {
-      await axiosBase.post("/question", {
+      await axiosBase.post("/api/question", {
         user_id: user.userid,
         title: titleValue,
         content: descriptionValue,
