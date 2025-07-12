@@ -32,7 +32,7 @@ function Login() {
     }
 
     try {
-      const response = await axiosBase.post("/user/login", {
+      const response = await axiosBase.post("/api/user/login", {
         email: emailValue,
         password: passwordValue,
       });
