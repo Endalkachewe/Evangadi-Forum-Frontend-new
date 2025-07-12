@@ -18,7 +18,7 @@ function App() {
   const [user, setUser] = useState({});
   async function checkUser() {
     try {
-      const { data } = await axiosBase.get("/user/checkUser", {
+      const { data } = await axiosBase.get("/api/user/checkUser", {
         headers: {
           Authorization: "Bearer " + token,
         },
