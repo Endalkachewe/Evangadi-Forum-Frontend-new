@@ -32,7 +32,7 @@ function Register() {
     }
 
     try {
-      await axiosBase.post("/user/register", {
+      await axiosBase.post("api/user/register", {
         user_name: usernameValue,
         first_name: firstnameValue,
         last_name: lastnameValue,
