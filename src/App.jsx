@@ -17,7 +17,13 @@ function App() {
   const navigate = useNavigate();
   const [user, setUser] = useState({});
   async function checkUser() {
+        if (!token) {
+      // If there is no token, we don't need to do anything.
+      // The user state will remain empty, which is correct.
+      return; 
+    }
     try {
+      
       const { data } = await axiosBase.get("/api/user/checkUser", {
         headers: {
           Authorization: "Bearer " + token,
