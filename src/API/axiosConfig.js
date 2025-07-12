@@ -5,6 +5,6 @@ const axiosBase = axios.create({
   // baseURL: "http://localhost:5500/api"
 
   // For deployed version
-  baseURL: "https://evangadiforum-backend-final-au5c.onrender.com",
+  baseURL: "https://evangadi-forum-backend-new.onrender.com",
 });
 export default axiosBase;
