@@ -18,7 +18,7 @@ function PostAnswer() {
       return;
     }
     try {
-      await axiosBase.post(`/question/${question_id}/answer`, {
+      await axiosBase.post(`/api/question/${question_id}/answer`, {
         content: answerValue,
         user_id: user.userid
       });

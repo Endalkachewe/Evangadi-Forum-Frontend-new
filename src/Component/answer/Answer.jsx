@@ -12,7 +12,7 @@ function Answer() {
     const getAnswers = async () => {
       try {
         await axiosBase
-          .get(`/question/${question_id}/answer`)
+          .get(`/api/question/${question_id}/answer`)
           .then((res) => {
             setAnswers(res.data);
             console.log(res);

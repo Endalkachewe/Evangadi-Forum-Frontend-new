@@ -15,7 +15,7 @@ function QuesAndAnw() {
     const getQuestion = async () => {
       try {
         await axiosBase
-          .get(`/question/${question_id}`)
+          .get(`/api/question/${question_id}`)
           .then((res) => {
             setQuestion(res.data);
             console.log(res);
