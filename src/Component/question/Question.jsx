@@ -11,7 +11,7 @@ function Question() {
     const getQuestions = async () => {
       try {
         await axiosBase
-          .get("/question")
+          .get("/api/question")
           .then((res) => {
             setQuestions(res.data);
             console.log(res);
